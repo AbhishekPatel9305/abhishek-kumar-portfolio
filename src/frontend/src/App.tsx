@@ -2,7 +2,6 @@ import {
   Award,
   BookOpen,
   Brain,
-  Briefcase,
   ChevronUp,
   Code2,
   Download,
@@ -16,6 +15,7 @@ import {
   Moon,
   Phone,
   Sparkles,
+  Star,
   Sun,
   Trophy,
   Wrench,
@@ -59,7 +59,6 @@ const NAV_LINKS = [
   { label: "Home", href: "#home" },
   { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
-  { label: "Experience", href: "#experience" },
   { label: "Training", href: "#current-learning" },
   { label: "Certifications", href: "#certifications" },
   { label: "Achievements", href: "#achievements" },
@@ -1375,6 +1374,46 @@ function Achievements() {
               </div>
             </div>
           </div>
+
+          {/* Marketing Lead Experience */}
+          <div
+            className="glass-card card-hover glow-border-primary p-8 rounded-2xl relative overflow-hidden mt-6"
+            data-ocid="achievements.item.2"
+          >
+            <div
+              className="absolute top-0 right-0 w-40 h-40 rounded-full blur-3xl opacity-20 pointer-events-none"
+              style={{ background: "oklch(0.65 0.28 200)" }}
+            />
+            <div
+              className="absolute top-0 left-0 right-0 h-0.5"
+              style={{
+                background:
+                  "linear-gradient(90deg, oklch(0.65 0.28 200), oklch(0.75 0.22 300))",
+              }}
+            />
+            <div className="flex items-start gap-5 relative">
+              <div
+                className="flex-shrink-0 w-14 h-14 rounded-2xl flex items-center justify-center"
+                style={{ background: "oklch(0.65 0.28 200 / 0.15)" }}
+              >
+                <Star size={24} style={{ color: "oklch(0.75 0.22 200)" }} />
+              </div>
+              <div>
+                <p className="text-muted-foreground leading-relaxed">
+                  <span className="font-semibold text-foreground">
+                    Marketing Lead – LPU | EventViewz (Aug&apos;25 – Present):
+                  </span>{" "}
+                  Led end-to-end marketing strategy for EventViewz at LPU,
+                  driving measurable increases in student engagement, event
+                  registrations, and brand visibility across campus by designing
+                  and executing promotional campaigns across social media and
+                  offline channels, collaborating with department heads, and
+                  coordinating with event planning teams to build optimized
+                  marketing funnels and monitor participation metrics.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </Section>
@@ -1678,110 +1717,6 @@ function Contact() {
 
 // ─── Resume Section ───────────────────────────────────────────────────────────
 
-// ─── Experience ──────────────────────────────────────────────────────────────
-
-function Experience() {
-  return (
-    <Section id="experience" className="py-24">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeader
-          label="WORK EXPERIENCE"
-          title="My Experience"
-          subtitle="Professional roles and responsibilities I have undertaken."
-          num="09"
-        />
-
-        <div className="mt-16 max-w-3xl">
-          <div
-            className="glass-card card-hover glow-border-primary p-8 rounded-2xl relative overflow-hidden"
-            data-ocid="experience.item.1"
-          >
-            <div
-              className="absolute top-0 right-0 w-40 h-40 rounded-full blur-3xl opacity-20 pointer-events-none"
-              style={{ background: "oklch(0.65 0.28 300)" }}
-            />
-            <div
-              className="absolute top-0 left-0 right-0 h-0.5"
-              style={{
-                background:
-                  "linear-gradient(90deg, oklch(0.65 0.28 300), oklch(0.75 0.22 200))",
-              }}
-            />
-            <div className="flex items-start gap-5 relative">
-              <div
-                className="flex-shrink-0 w-14 h-14 rounded-2xl flex items-center justify-center"
-                style={{ background: "oklch(0.65 0.28 300 / 0.15)" }}
-              >
-                <Briefcase
-                  size={24}
-                  style={{ color: "oklch(0.75 0.22 300)" }}
-                />
-              </div>
-              <div className="flex-1">
-                <div className="flex flex-wrap items-center justify-between gap-2 mb-1">
-                  <h3 className="text-xl font-bold font-display text-foreground">
-                    Marketing Lead
-                  </h3>
-                  <span
-                    className="text-xs font-semibold px-3 py-1 rounded-full"
-                    style={{
-                      background: "oklch(0.65 0.28 300 / 0.15)",
-                      color: "oklch(0.75 0.22 300)",
-                    }}
-                  >
-                    Aug 2025 – Present
-                  </span>
-                </div>
-                <p
-                  className="text-sm font-semibold mb-4"
-                  style={{ color: "oklch(0.75 0.22 300)" }}
-                >
-                  EventViewz · Training &amp; Development Sector · LPU
-                </p>
-                <ul className="space-y-2 text-muted-foreground text-sm leading-relaxed list-none">
-                  <li className="flex items-start gap-2">
-                    <span
-                      style={{ color: "oklch(0.65 0.28 300)" }}
-                      className="mt-1 flex-shrink-0"
-                    >
-                      ▸
-                    </span>
-                    Led end-to-end marketing strategy for EventViewz at LPU,
-                    driving measurable increases in student engagement, event
-                    registrations, and brand visibility across campus.
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span
-                      style={{ color: "oklch(0.65 0.28 300)" }}
-                      className="mt-1 flex-shrink-0"
-                    >
-                      ▸
-                    </span>
-                    Designed and executed promotional campaigns across social
-                    media and offline channels, collaborating with department
-                    heads to expand audience reach.
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span
-                      style={{ color: "oklch(0.65 0.28 300)" }}
-                      className="mt-1 flex-shrink-0"
-                    >
-                      ▸
-                    </span>
-                    Coordinated with event planning teams to build optimized
-                    marketing funnels, monitor participation metrics, and
-                    continuously improve outreach effectiveness.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </Section>
-  );
-}
-
 function ResumeSection() {
   return (
     <Section id="resume" className="py-24">
@@ -1997,7 +1932,6 @@ export default function App() {
           <Hero />
           <Skills />
           <Projects />
-          <Experience />
           <CurrentLearning />
           <Certifications />
           <Achievements />
