@@ -8,7 +8,6 @@ import {
   ExternalLink,
   Globe,
   GraduationCap,
-  Heart,
   Mail,
   MapPin,
   Menu,
@@ -1789,9 +1788,6 @@ function ResumeSection() {
 
 function Footer() {
   const year = new Date().getFullYear();
-  const hostname =
-    typeof window !== "undefined" ? window.location.hostname : "";
-
   return (
     <footer
       className="border-t py-12"
@@ -1863,16 +1859,7 @@ function Footer() {
           className="mt-8 pt-6 border-t text-center text-xs text-muted-foreground"
           style={{ borderColor: "oklch(0.18 0.04 275)" }}
         >
-          © {year}. Built with{" "}
-          <Heart size={10} className="inline text-red-400 mx-0.5" /> using{" "}
-          <a
-            href={`https://caffeine.ai?utm_source=caffeine-footer&utm_medium=referral&utm_content=${encodeURIComponent(hostname)}`}
-            target="_blank"
-            rel="noreferrer"
-            className="hover:text-foreground transition-colors"
-          >
-            caffeine.ai
-          </a>
+          © {year} Abhishek Kumar. All rights reserved.
         </div>
       </div>
     </footer>
