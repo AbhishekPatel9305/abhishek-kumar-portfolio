@@ -1,26 +1,51 @@
 # Abhishek Kumar Portfolio
 
-This repository contains the source for my personal portfolio website. It is intended to present my projects, technical skills, and development focus in a clean, professional format.
+This repository contains the source code for my personal portfolio website. It presents my projects, skills, certifications, and experience in a polished interactive frontend built for a stronger professional online presence.
+
+## Overview
+
+The portfolio is designed to showcase:
+
+- featured software and machine learning projects
+- technical skills across Python, web development, and AI
+- certifications, education, and training
+- contact links and resume-style professional information
+
+## Stack
+
+This project uses a modern frontend toolchain and Internet Computer project structure:
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- Radix UI
+- Motoko / ICP canister structure
+
+## Repository Structure
+
+- `src/frontend/` - main portfolio frontend source code
+- `src/backend/` - backend canister files
+- `frontend/public/assets/` - portfolio images and certificates
+- `scripts/` - utility scripts for image maintenance
+
+## Key Frontend File
+
+- `src/frontend/src/App.tsx` - primary portfolio interface composition
+
+## How To Run
+
+From the frontend workspace:
+
+```bash
+cd src/frontend
+pnpm install
+pnpm build
+```
 
 ## Purpose
 
-The portfolio highlights my work across:
-
-- Python projects
-- machine learning and NLP experiments
-- web development projects
-- practical portfolio-ready applications
-
-## Focus Areas
-
-- data analysis
-- natural language processing
-- machine learning
-- responsive web interfaces
-
-## Status
-
-The portfolio is being refined as I continue improving project quality, documentation, and presentation across my GitHub profile.
+This repository supports my professional presentation by giving recruiters, collaborators, and visitors a clear place to explore my work and background.
 
 ## Links
 
