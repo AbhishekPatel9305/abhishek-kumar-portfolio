@@ -1,12 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap");
 
-@font-face {
-  font-family: "Bricolage Grotesque";
-  src: url("/assets/fonts/BricolageGrotesque.woff2") format("woff2");
-  font-weight: 200 800;
-  font-display: swap;
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -58,7 +51,6 @@
     --cyan: 0.75 0.22 200;
   }
 
-  /* ── Light theme ── */
   [data-theme="light"] {
     --background: 0.97 0.005 260;
     --foreground: 0.18 0.03 270;
@@ -260,7 +252,6 @@
     transform: translateY(0);
   }
 
-  /* Nav pill style for active link */
   .nav-link {
     color: oklch(var(--muted-foreground));
     position: relative;
@@ -323,7 +314,6 @@
     box-shadow: 0 0 20px oklch(0.65 0.28 300 / 0.4);
   }
 
-  /* Shimmer border on stat cards */
   .shimmer-border {
     position: relative;
     overflow: hidden;
@@ -351,7 +341,6 @@
     opacity: 1;
   }
 
-  /* Section number background decoration */
   .section-num {
     font-family: "Bricolage Grotesque", system-ui, sans-serif;
     font-weight: 800;
@@ -380,7 +369,6 @@
     background-clip: text;
   }
 
-  /* Typewriter cursor blink */
   .cursor-blink::after {
     content: "|";
     display: inline-block;
@@ -389,7 +377,6 @@
     color: oklch(0.75 0.22 300);
   }
 
-  /* Scroll indicator mouse */
   .scroll-mouse {
     width: 24px;
     height: 38px;
@@ -410,7 +397,6 @@
     animation: scroll-dot 2s ease-in-out infinite;
   }
 
-  /* Floating hero particles */
   .hero-particle {
     position: absolute;
     border-radius: 50%;
@@ -418,7 +404,6 @@
     animation: particle-drift linear infinite;
   }
 
-  /* Theme toggle button */
   .theme-toggle-btn {
     width: 38px;
     height: 38px;
@@ -450,7 +435,6 @@
     background: oklch(0.55 0.28 300 / 0.08);
   }
 
-  /* Social icon circle buttons */
   .social-circle-btn {
     width: 46px;
     height: 46px;
@@ -595,3 +579,4 @@
     animation: none;
   }
 }
+", "encoding": "utf-8", "sha": "b686229a742a03ab5b8521a5f47a8a077691d10a", "display_url": "https://github.com/AbhishekPatel9305/abhishek-kumar-portfolio/blob/main/src/frontend/src/index.css", "display_title": "index.css"}
