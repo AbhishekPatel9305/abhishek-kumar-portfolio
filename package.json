@@ -1,5 +1,6 @@
 {
-  "name": "@caffeine/template-app",
+  "name": "abhishek-kumar-portfolio",
+  "description": "Professional portfolio website for Abhishek Kumar.",
   "type": "module",
   "engines": {
     "node": ">=16.0.0",
