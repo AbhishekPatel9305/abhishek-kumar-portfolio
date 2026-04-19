@@ -24,6 +24,9 @@ import { useEffect, useRef, useState } from "react";
 import { SiGithub, SiLinkedin } from "react-icons/si";
 import { useScrollReveal } from "./hooks/useScrollReveal";
 
+const assetUrl = (path: string) =>
+  `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
+
 // ─── Theme ───────────────────────────────────────────────────────────────────
 
 function useTheme() {
@@ -102,7 +105,7 @@ const CERTIFICATIONS = [
     description:
       "Comprehensive understanding of networking fundamentals, protocols, and connectivity principles.",
     downloadUrl:
-      "/assets/uploads/The-Bits-and-Bytes-of-Computer-Networking-certificate-3.pdf",
+      assetUrl("assets/uploads/The-Bits-and-Bytes-of-Computer-Networking-certificate-3.pdf"),
   },
   {
     title: "Computer Communications (Specialization)",
@@ -110,7 +113,7 @@ const CERTIFICATIONS = [
     date: "Nov 2024",
     description:
       "In-depth study of computer communications protocols, networking architecture, and data transmission.",
-    downloadUrl: "/assets/uploads/Computer-Communications-certificate-2.pdf",
+    downloadUrl: assetUrl("assets/uploads/Computer-Communications-certificate-2.pdf"),
   },
   {
     title: "Master Generative AI & Generative AI Tools",
@@ -119,7 +122,7 @@ const CERTIFICATIONS = [
     description:
       "Comprehensive training in generative AI, machine learning models, and practical AI tool implementation.",
     downloadUrl:
-      "/assets/uploads/Master-Generative-AI-Generative-AI-tools-2.pdf",
+      assetUrl("assets/uploads/Master-Generative-AI-Generative-AI-tools-2.pdf"),
   },
   {
     title: "Build Generative AI Apps and Solutions with No-Code Tools",
@@ -128,7 +131,7 @@ const CERTIFICATIONS = [
     description:
       "Expertise in developing AI applications without coding using cutting-edge no-code platforms.",
     downloadUrl:
-      "/assets/uploads/Build-Generative-AI-Apps-and-solutions-with-No-Code-Tools-1.pdf",
+      assetUrl("assets/uploads/Build-Generative-AI-Apps-and-solutions-with-No-Code-Tools-1.pdf"),
   },
   {
     title: "Computational Theory: Language Principle & Finite Automata",
@@ -137,7 +140,7 @@ const CERTIFICATIONS = [
     description:
       "Deep understanding of formal languages, computational theory, and automata fundamentals.",
     downloadUrl:
-      "/assets/uploads/Computational-Theory-Language-Principle-Finite-Automata-Theory-1.pdf",
+      assetUrl("assets/uploads/Computational-Theory-Language-Principle-Finite-Automata-Theory-1.pdf"),
   },
 ];
 
@@ -148,7 +151,7 @@ const TRAINING = [
     org: "LPU Centre for Professional Enhancement",
     description:
       "Completed intensive skill development training focused on logical thinking, programming fundamentals, and data structures for effective problem-solving and algorithm design.",
-    downloadUrl: "/assets/uploads/Summer-Training-Certificate-1.pdf",
+    downloadUrl: assetUrl("assets/uploads/Summer-Training-Certificate-1.pdf"),
   },
 ];
 
@@ -416,7 +419,7 @@ function Navbar({
 
         <div className="hidden md:flex items-center gap-2">
           <a
-            href="/assets/abhishek_kumar_resume-019d4f86-0cf4-71b9-a8d5-68526953f37f.pdf"
+            href={assetUrl("assets/abhishek_kumar_resume-019d4f86-0cf4-71b9-a8d5-68526953f37f.pdf")}
             download
             className="flex items-center gap-1.5 px-5 py-2 text-sm font-semibold btn-outline"
             data-ocid="nav.secondary_button"
@@ -491,7 +494,7 @@ function Navbar({
             ))}
             <li className="pt-2">
               <a
-                href="/assets/abhishek_kumar_resume-019d4f86-0cf4-71b9-a8d5-68526953f37f.pdf"
+                href={assetUrl("assets/abhishek_kumar_resume-019d4f86-0cf4-71b9-a8d5-68526953f37f.pdf")}
                 download
                 className="flex items-center gap-2 text-sm font-semibold px-3 py-2 btn-outline w-full justify-center"
                 data-ocid="nav.secondary_button"
@@ -783,7 +786,7 @@ function Hero() {
               }}
             >
               <img
-                src="/assets/uploads/abhi_picc-019d2b4a-e837-736e-ad80-19c9f7f76097-1.jpeg"
+                src={assetUrl("assets/uploads/abhi_picc-019d2b4a-e837-736e-ad80-19c9f7f76097-1.jpeg")}
                 alt="Abhishek Kumar"
                 className="w-full h-full object-cover"
               />
@@ -1750,7 +1753,7 @@ function ResumeSection() {
           </p>
 
           <a
-            href="/assets/abhishek_kumar_resume-019d4f86-0cf4-71b9-a8d5-68526953f37f.pdf"
+            href={assetUrl("assets/abhishek_kumar_resume-019d4f86-0cf4-71b9-a8d5-68526953f37f.pdf")}
             download
             className="inline-flex items-center gap-3 px-10 py-4 text-base font-semibold btn-primary"
             data-ocid="resume.primary_button"
